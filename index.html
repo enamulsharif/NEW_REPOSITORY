@@ -1,16 +1,107 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>git hub example</title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.12/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="mycss.css"> 
+	<title>Israel Payment</title>
+
+	<style>
+		/*body {background-color: powderblue;} --!
+		h1   {color: blue;}
+		p    {color: red;}*/
+		.detuct { background-color: ; }
+	</style>
+
+
 </head>
 <body>
-<b>List of States in USA</b>
-<ul>
-	<li>California</li>
-	<li>Georgia</li>
-	<li>Texas</li>
-	<li>New Mexico</li>
-</ul>
+<div id="container">
+	<h1>Lease payment for Israel Abu</h1>
+
+	
+	<table border="solid" id="myTable">
+	<thead>
+		<tr>
+            <th>Type of Transaction	</th>
+            <th>Amount</th>
+           
+	     </tr>
+		
+	</thead>	
+
+	<tbod>
+
+		<tr>
+			<th>Total City Rides</th><td><input type="text" class="bold" id="cityRides"></td>		
+		</tr>
+		
+		<tr>
+			<th>Total Credit Card</th><td><input type="number" id="creditAmount" ></td>		
+		</tr>
+		<tr>
+			<th>Deduct 5%</th><td><div class="detuct" id="creditInterest"></div></td>		
+		</tr>
+		<tr>
+			<th><b>Total Credit Card(after 5%)</b></th><td><div class="bold" id="totalCreditAmount"></div></td>		
+		</tr>
+
+		<!--  Account Call -->
+
+		<tr>
+			<th>Total Account Call Amount</th><td><input type="number" id="accountAmount"></td>
+		</tr>
+		<tr>	
+			<th>Deduct 10%</th><td><div class="detuct" id="acountInterest"></div></td>		
+		</tr>
+		<tr>
+			<th><b>Total Account Amount(after 10%)</b></th><td><div class="bold" id="totalAccountAmount"></div></td>		
+		</tr>
+
+		<!--  Access Call -->
+
+		<tr>
+			<th>Total Access (miles)</th><td><input type="number" id="accessMiles"></td>		
+		</tr>
+		<tr>
+			<th>Per Mile $2.6</th><td><div id="accessAmount"> </div></td>	
+		</tr>
+		<tr>
+			<th>Deduct 10%</th><td><div class="detuct" id="accessCharge"></div></td>		
+		</tr>
+		<tr>
+			<th>Access Amount(after 10%)</th><td><div class="bold" id="accessAmountWithoutInterest"> </div> </td>		
+		</tr>
+		<tr>
+			<th>Access service fee(total)</th><td><input type="number" class="detuct" id="accessFee"></td>		
+		</tr>
+		<tr>
+			<th><b>Total Access Amount(after fee)</b></th><td><div class="bold" id="totalAccessAmount"></div></td>		
+		</tr>	
+		
+		<tr>
+			<th>Total Gross Income</th><td><div class="bold" id="totalGrossIncome"> </div></td>		
+		</tr>
+		<tr>
+			<th>Total Lease</th><td><input type="number" class="detuct" id="totalLease"></td>		
+		</tr>
+		<tr>
+			<th>Deposite</th><td><input type="number" class="detuct" id="deposite"></td>		
+		</tr>
+		<tr>
+			<th>Israel Should Get </th><td><div class="bold" id="totalNetIncome"></div></td>		
+		</tr>
+		</tbod>
+	
+	</table>
+	
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/1.4.5/numeral.min.js"></script>
+ --><script type="text/javascript" src="payment_test.js"></script>
+<!-- <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+ -->
 
 </body>
 </html>
